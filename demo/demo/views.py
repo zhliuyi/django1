@@ -23,5 +23,4 @@ def urltestnew(request, city, year):
     return HttpResponse("%s年在%s" % (year, city))
 
 
-def add():
-    return "hello"
+
