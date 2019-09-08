@@ -22,5 +22,7 @@ def urltest(request, num):
 def urltestnew(request, city, year):
     return HttpResponse("%s年在%s" % (year, city))
 
+def hello():
+    return "hekklo"
 
 
