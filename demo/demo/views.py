@@ -14,12 +14,14 @@ def about(request):
     return HttpResponse("这是一个about页面")
 
 
-def urltest(request,num):
-    print (num)
-    return HttpResponse("这是一个url测试视图%s"%(num))
+def urltest(request, num):
+    print(num)
+    return HttpResponse("这是一个url测试视图%s" % (num))
 
 
-def urltestnew(request,city,year):
+def urltestnew(request, city, year):
+    return HttpResponse("%s年在%s" % (year, city))
 
 
-    return HttpResponse("%s年在%s" %(year,city))
+def add():
+    return "hello"
